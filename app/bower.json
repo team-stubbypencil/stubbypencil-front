@@ -15,6 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": "1.10"
+    "jquery": "1.10",
+    "metro-ui-css": "~2.0.23"
   }
 }
