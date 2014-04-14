@@ -15,5 +15,10 @@ var userLib = module.exports = {
         } else {
             callback("",false)
         }
+    },
+
+    join : function(user, callback){
+        //회원등록시도
     }
+
 };

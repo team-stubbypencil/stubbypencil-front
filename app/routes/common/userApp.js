@@ -10,6 +10,10 @@ exports.loginForm = function(req, res){
     res.render('./common/login_form');
 };
 
+exports.joinForm = function(req, res){
+    res.render('./common/join_form');
+};
+
 exports.login = function(req, res){
 
     return user.login({
