@@ -5,7 +5,7 @@
 
 var express = require('express');
 var routes = require('./routes');
-var user = require('./routes/user');
+var user = require('./routes/common/userApp.js');
 var http = require('http');
 var path = require('path');
 var engine = require('ejs-locals');
@@ -32,7 +32,8 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/users', user.list);
+app.get('/user/loginForm', user.loginForm);
+app.post('/user/login', user.login);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
